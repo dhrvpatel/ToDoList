@@ -1,0 +1,55 @@
+extends layout
+
+block content
+    
+    .container
+      
+      hr
+      // Title
+      .row
+        .col-lg-6
+                             
+         img(src='images/bg2.png', alt='')
+        
+        .col-lg-6
+           .login-panel.panel.panel-default
+             .panel-heading
+               h3.panel-title Create an account
+              .panel-body
+                    .row
+                    .col-lg-6
+                    form(role='form')
+                                                            
+                        .form-group
+                        label Nickname
+                        |                                             
+                        input.form-control(placeholder='Enter Your Nick name' )
+                        br
+                        label Email
+                        |                                             
+                        input.form-control(placeholder='Enter Email Address')
+                        |                                                        
+                        br
+                        label Password
+                        |                                             
+                        input.form-control(placeholder='Enter Password')
+                        |                                    
+                        br
+                        label Re-type Password
+                        |                                             
+                        input.form-control(placeholder='Enter Password again')
+                        |                                              
+                        br
+                                               
+                        button.btn-lg.btn-warning.btn-block(type='submit') CREATE ACCOUNT
+      //.row
+      hr
+      //Footer
+      footer
+        .row
+          .col-lg-12
+            p Mobile Design Assignment
+    
+    
+        
+       

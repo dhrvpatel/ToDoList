@@ -1,0 +1,114 @@
+extends layout
+
+block content
+    
+    .container
+      
+      hr
+      // Title
+      .row
+        .panel-body
+            .row
+            .col-lg-6
+
+                    form(role='form')
+                                                            
+                        .form-group
+                        label Task
+                        |                                             
+                        input.form-control(placeholder='Enter things you want to do')
+                        br
+                        label Date/Time
+                        |                                             
+                        input.form-control(placeholder='Select Date/Time')
+                        |                                                        
+                        br
+                        label Location
+                        |                                             
+                        input.form-control(placeholder='Enter Location')
+                                              
+                        br
+                                               
+                        button.btn.btn-warning(type='submit') Add
+            .col-lg-6
+                  .panel.panel-default
+                   .panel-heading To-Do List
+
+                   .panel-body
+                    .list-group
+                       a.list-group-item(href='#')
+                        i.fa.fa-comment.fa-fw
+                        |  New Comment
+                        |                                     
+                        span.pull-right.text-muted.small
+                            em 4 minutes ago
+                        |                                 
+                       a.list-group-item(href='#')
+                        i.fa.fa-twitter.fa-fw
+                        |  3 New Followers
+                        |                                     
+                        span.pull-right.text-muted.small
+                            em 12 minutes ago
+                        |                                 
+                       a.list-group-item(href='#')
+                        i.fa.fa-envelope.fa-fw
+                        |  Message Sent
+                        |                                     
+                        span.pull-right.text-muted.small
+                            em 27 minutes ago
+                        |                                 
+                       a.list-group-item(href='#')
+                        i.fa.fa-tasks.fa-fw
+                        |  New Task
+                        |                                     
+                        span.pull-right.text-muted.small
+                            em 43 minutes ago
+                        |                                 
+                       a.list-group-item(href='#')
+                        i.fa.fa-upload.fa-fw
+                        |  Server Rebooted
+                        |                                     
+                        span.pull-right.text-muted.small
+                            em 11:32 AM
+                        |                                 
+                       a.list-group-item(href='#')
+                        i.fa.fa-bolt.fa-fw
+                        |  Server Crashed!
+                        |                                     
+                        span.pull-right.text-muted.small
+                            em 11:13 AM
+                        |                                 
+                       a.list-group-item(href='#')
+                        i.fa.fa-warning.fa-fw
+                        |  Server Not Responding
+                        |                                     
+                        span.pull-right.text-muted.small
+                            em 10:57 AM
+                        |                                 
+                       a.list-group-item(href='#')
+                        i.fa.fa-shopping-cart.fa-fw
+                        |  New Order Placed
+                        |                                     
+                        span.pull-right.text-muted.small
+                            em 9:49 AM
+                        |                                 
+                       a.list-group-item(href='#')
+                        i.fa.fa-money.fa-fw
+                        |  Payment Received
+                        |                                     
+                        span.pull-right.text-muted.small
+                            em Yesterday
+                       
+      // /
+      .row
+      hr
+      
+      // 
+      footer
+        .row
+          .col-lg-12
+            p Mobile Design Assignment
+    
+    
+        
+       
