@@ -31,12 +31,18 @@ block content
                                                
                         button.btn.btn-warning(type='submit') Add
             .col-lg-6
-                  .panel.panel-default
-                   .panel-heading To-Do List 
-                    //Display list of tasks
-                   .panel-body
-                    .list-group
-                       a.list-group-item(href='#')
+             .panel.panel-default
+              .panel-heading To-do list
+              ul.nav.nav-tabs
+                 li.active
+                   a(href='#pending', data-toggle='tab') Pending
+                 |       
+                 li
+                   a(href='#completed', data-toggle='tab') Completed              
+               #myTabContent.tab-content
+                 #pending.tab-pane.active.in
+                   .list-group
+                      a.list-group-item(href='#')
                         i.fa.fa-comment.fa-fw
                         |  New Comment
                         |                                     
@@ -56,35 +62,9 @@ block content
                         |                                     
                         span.pull-right.text-muted.small
                             em 27 minutes ago
-                        |                                 
-                       a.list-group-item(href='#')
-                        i.fa.fa-tasks.fa-fw
-                        |  New Task
-                        |                                     
-                        span.pull-right.text-muted.small
-                            em 43 minutes ago
-                        |                                 
-                       a.list-group-item(href='#')
-                        i.fa.fa-upload.fa-fw
-                        |  Server Rebooted
-                        |                                     
-                        span.pull-right.text-muted.small
-                            em 11:32 AM
-                        |                                 
-                       a.list-group-item(href='#')
-                        i.fa.fa-bolt.fa-fw
-                        |  Server Crashed!
-                        |                                     
-                        span.pull-right.text-muted.small
-                            em 11:13 AM
-                        |                                 
-                       a.list-group-item(href='#')
-                        i.fa.fa-warning.fa-fw
-                        |  Server Not Responding
-                        |                                     
-                        span.pull-right.text-muted.small
-                            em 10:57 AM
-                        |                                 
+
+                 #completed.tab-pane.fade
+                   .list-group
                        a.list-group-item(href='#')
                         i.fa.fa-shopping-cart.fa-fw
                         |  New Order Placed
@@ -98,10 +78,11 @@ block content
                         |                                     
                         span.pull-right.text-muted.small
                             em Yesterday
-       // /
+
+
       .row
       hr
-      // 
+      
       footer
         .row
           .col-lg-12
